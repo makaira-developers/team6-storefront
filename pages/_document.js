@@ -13,6 +13,11 @@ export default class MyDocument extends Document {
         <Head>
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
 
+          <script
+            async
+            className="elbwalker"
+            src="https://walker.s.elbwalkerapis.com/walker.js"
+          ></script>
           {/*
           <link rel="dns-prefetch" href="https://cdn.polyfill.io" />
           <link rel="preconnect" href="https://cdn.polyfill.io" />
