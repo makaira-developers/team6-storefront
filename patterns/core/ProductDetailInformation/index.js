@@ -49,7 +49,12 @@ function ProductDetailInformation(props) {
   }
 
   return (
-    <section className="product-detail-information">
+    <section
+      className="product-detail-information"
+      elb="product"
+      elb-action="load:detail"
+      elb-product={`id:${productInformation.id}`}
+    >
       <TopHeader {...productInformation} />
 
       <div className="product-detail-information__wrapper">
