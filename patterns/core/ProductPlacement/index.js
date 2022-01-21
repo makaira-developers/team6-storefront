@@ -12,7 +12,7 @@ function ProductPlacement(props) {
   if (products.length == 0) return null
 
   return (
-    <section className="product-placement">
+    <section className="product-placement" elb-product="position:placement">
       <div className="product-placement__text">
         {heading && <Heading>{heading}</Heading>}
         {text && <Copytext dangerouslySetInnerHTML={{ __html: text }} />}

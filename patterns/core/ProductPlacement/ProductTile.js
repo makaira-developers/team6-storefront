@@ -20,7 +20,12 @@ export default function ProductTile(props) {
   })
 
   return (
-    <article className="product-placement-item">
+    <article
+      className="product-placement-item"
+      elb="product"
+      elb-action="visible,click"
+      elb-product={`id:${props.id};name:'${title}';manufacturer:'${manufacturer_title}'`}
+    >
       <Link href={url}>
         <picture className="product-placement-item__image">
           <img data-src={productImage} alt={title} />
