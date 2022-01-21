@@ -12,7 +12,7 @@ export default function ProductActions(props) {
   }
 
   return (
-    <div className="product-item__actions">
+    <div className="product-item__actions" elb-action="click:add">
       {!isBundle && (
         <Button variant="primary">{t('PRODUCT_TILE_ADD_TO_CART')}</Button>
       )}

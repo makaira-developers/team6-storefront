@@ -23,8 +23,15 @@ export default function List(props) {
   })
 
   return (
-    <div ref={listRef} className={classes}>
-      {products.map((entry) => {
+    <div
+      ref={listRef}
+      className={classes}
+      elb="list"
+      elb-action="load:view"
+      elb-list={`count:${totalProductCount}`}
+      elb-product="position:list"
+    >
+      {products.map((entry, i) => {
         if (entry.isBanner) {
           return <Banner key={`banner.${entry.id}`} {...entry} />
         } else {
@@ -32,13 +39,13 @@ export default function List(props) {
             <ProductTile
               pageData={pageData}
               key={entry.id}
+              i={++i}
               {...props}
               {...entry.fields}
             />
           )
         }
       })}
-
       <Pagination
         key={queryParams.offset ?? 0} // reset Pagination to re-run constructor when offset change (e.g. when a filter is clicked)
         queryParams={queryParams}

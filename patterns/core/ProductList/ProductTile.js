@@ -17,6 +17,7 @@ export default function ProductTile(props) {
     isBundle,
     pageData = {},
     images = [],
+    i = 0,
   } = props
 
   const { getImageLink } = useConfiguration()
@@ -44,7 +45,12 @@ export default function ProductTile(props) {
   const productUrl = getProductDetailUrl({ url, pageData })
 
   return (
-    <article className={classes}>
+    <article
+      className={classes}
+      elb="product"
+      elb-action="visible(product);click(product)"
+      elb-product={`id:${props.id};name:'${title}';position:${i}`}
+    >
       <Link href={productUrl} onClick={onClickProduct}>
         <picture className="product-item__image">
           {isLazyLoad ? (

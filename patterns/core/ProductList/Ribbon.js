@@ -4,7 +4,7 @@ export default function Ribbon(props) {
   if (!isVisible) return null
 
   return (
-    <div className="ribbon">
+    <div className="ribbon" elb-product="paid:true">
       <span>{children} </span>
     </div>
   )
