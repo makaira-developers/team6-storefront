@@ -20,10 +20,6 @@ export default class MyDocument extends Document {
             src="https://walker.s.elbwalkerapis.com/walker.js"
           ></script>
 
-          <script
-            async
-            src="https://www.googletagmanager.com/gtm.js?id=GTM-NVH5762"
-          ></script>
           {/*
           <link rel="dns-prefetch" href="https://cdn.polyfill.io" />
           <link rel="preconnect" href="https://cdn.polyfill.io" />
