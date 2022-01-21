@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             async
             className="elbwalker"
             data-project="X4G9OVY"
-            src="https://walker.p.elbwalkerapis.com/walker.js"
+            src="https://walker.s.elbwalkerapis.com/walker.js"
           ></script>
           {/*
           <link rel="dns-prefetch" href="https://cdn.polyfill.io" />
