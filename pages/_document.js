@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
           <script
             async
             className="elbwalker"
+            data-project="X4G9OVY"
             src="https://walker.s.elbwalkerapis.com/walker.js"
           ></script>
           {/*
