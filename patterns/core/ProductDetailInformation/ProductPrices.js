@@ -6,7 +6,10 @@ export default function ProductPrices(props) {
   const { price = 0.0 } = props
 
   return (
-    <div className="product-detail-information__prices">
+    <div
+      className="product-detail-information__prices"
+      elb-product={`price:'${price}'`}
+    >
       <FormattedPrice
         price={price}
         className={'product-detail-information__price'}

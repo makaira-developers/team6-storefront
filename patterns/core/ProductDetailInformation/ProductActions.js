@@ -19,6 +19,7 @@ export default function ProductActions(props) {
         icon="heart"
         className="product-detail-information__wishlist"
         variant="icon-only"
+        elb-action="click:wish"
       />
 
       <Dropdown
@@ -36,6 +37,7 @@ export default function ProductActions(props) {
         disabled={loading}
         onClick={addToCart}
         className="product-detail-information__add-cart"
+        elb-action="click:add"
       >
         {t('PRODUCT_DETAIL_ADD_TO_CART')}
       </Button>
