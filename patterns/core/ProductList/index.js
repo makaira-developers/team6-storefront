@@ -68,8 +68,13 @@ class ProductList extends Component {
     const numberOfActiveFilters = getNumberOfActiveFilters({ aggregations })
 
     return (
-      <section className="product-list">
-        <div className="product-list__actions">
+      <section className="product-list" elb-product="position:list">
+        <div
+          className="product-list__actions"
+          elb="list"
+          elb-action="load:view"
+          elb-list={`count:${totalProductCount};active:${numberOfActiveFilters}`}
+        >
           <FilterButton
             numberOfActiveFilters={numberOfActiveFilters}
             showMobileFilter={this.showMobileFilter}

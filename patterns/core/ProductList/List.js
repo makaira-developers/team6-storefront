@@ -23,14 +23,7 @@ export default function List(props) {
   })
 
   return (
-    <div
-      ref={listRef}
-      className={classes}
-      elb="list"
-      elb-action="load:view"
-      elb-list={`count:${totalProductCount}`}
-      elb-product="position:list"
-    >
+    <div ref={listRef} className={classes}>
       {products.map((entry, i) => {
         if (entry.isBanner) {
           return <Banner key={`banner.${entry.id}`} {...entry} />

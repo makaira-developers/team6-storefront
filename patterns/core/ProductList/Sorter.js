@@ -24,7 +24,10 @@ export default function Sorter(props) {
   }
 
   return (
-    <form className="product-list__sorter">
+    <form
+      className="product-list__sorter"
+      elb-list={`sort:${currentSorting.value}`}
+    >
       <Dropdown
         key={currentSorting.value} // Do not remove key! See: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key
         id="sorter"
